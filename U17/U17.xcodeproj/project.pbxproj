@@ -91,6 +91,8 @@
 		566B6B1F1FCFA899003E0CA7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B6B151FCFA899003E0CA7 /* StringExtension.swift */; };
 		566B6B201FCFA899003E0CA7 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B6B161FCFA899003E0CA7 /* DictionaryExtension.swift */; };
 		56B18A521F7E1D4D008E7175 /* UAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B18A511F7E1D4D008E7175 /* UAPI.swift */; };
+		AC4E4991224FF3C20018E357 /* UTripTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4E4990224FF3C20018E357 /* UTripTab.storyboard */; };
+		AC4E49932250100D0018E357 /* UTripTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E49922250100D0018E357 /* UTripTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -181,6 +183,8 @@
 		566B6B161FCFA899003E0CA7 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		56B18A511F7E1D4D008E7175 /* UAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAPI.swift; sourceTree = "<group>"; };
 		85B583B6AD0CA533D314EB69 /* Pods-U17.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U17.release.xcconfig"; path = "Pods/Target Support Files/Pods-U17/Pods-U17.release.xcconfig"; sourceTree = "<group>"; };
+		AC4E4990224FF3C20018E357 /* UTripTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UTripTab.storyboard; sourceTree = "<group>"; };
+		AC4E49922250100D0018E357 /* UTripTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTripTabViewController.swift; sourceTree = "<group>"; };
 		FFAC76C53431EC466C69E89C /* Pods_U17.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U17.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -315,6 +319,7 @@
 		566B6A831FCFA878003E0CA7 /* Procedure */ = {
 			isa = PBXGroup;
 			children = (
+				AC4E4989224FECE00018E357 /* Trips */,
 				566B6AC51FCFA878003E0CA7 /* AppDelegate.swift */,
 				566B6A951FCFA878003E0CA7 /* Global.swift */,
 				566B6AC61FCFA878003E0CA7 /* Base */,
@@ -586,6 +591,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC4E4989224FECE00018E357 /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				AC4E498B224FED3C0018E357 /* ViewController */,
+				AC4E498A224FED310018E357 /* View */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		AC4E498A224FED310018E357 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC4E4990224FF3C20018E357 /* UTripTab.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC4E498B224FED3C0018E357 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC4E49922250100D0018E357 /* UTripTabViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -651,6 +681,7 @@
 			files = (
 				5668D36F1F7E146B00D24C39 /* LaunchScreen.storyboard in Resources */,
 				5668D36C1F7E146B00D24C39 /* Assets.xcassets in Resources */,
+				AC4E4991224FF3C20018E357 /* UTripTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,6 +806,7 @@
 				566B6B181FCFA899003E0CA7 /* UIColorExtension.swift in Sources */,
 				566B6A811FCFA686003E0CA7 /* UHairPowder.swift in Sources */,
 				566B6AED1FCFA878003E0CA7 /* UDescriptionTCell.swift in Sources */,
+				AC4E49932250100D0018E357 /* UTripTabViewController.swift in Sources */,
 				566B6B1A1FCFA899003E0CA7 /* UIViewExtension.swift in Sources */,
 				566B6AFB1FCFA878003E0CA7 /* UMineHead.swift in Sources */,
 				566B6AEC1FCFA878003E0CA7 /* UOtherWorksTCell.swift in Sources */,

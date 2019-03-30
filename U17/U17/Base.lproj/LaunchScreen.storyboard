@@ -22,15 +22,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="j4g-z4-oS3">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <rect key="frame" x="20" y="279" width="374" height="334"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="j4g-z4-oS3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="VzX-Lx-gtO"/>
-                            <constraint firstItem="mNF-S3-Ry0" firstAttribute="top" secondItem="j4g-z4-oS3" secondAttribute="bottom" id="YWz-Zo-bbU"/>
-                            <constraint firstItem="j4g-z4-oS3" firstAttribute="top" secondItem="b0Z-pS-Kwl" secondAttribute="bottom" id="gsi-f1-WEt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="j4g-z4-oS3" secondAttribute="trailing" id="hg5-md-XTs"/>
+                            <constraint firstItem="j4g-z4-oS3" firstAttribute="top" secondItem="b0Z-pS-Kwl" secondAttribute="bottom" constant="235" id="vUg-Vb-pW7"/>
                         </constraints>
                     </view>
                 </viewController>
