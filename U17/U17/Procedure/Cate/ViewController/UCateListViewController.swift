@@ -148,10 +148,3 @@ extension UCateListViewController: UICollectionViewDelegateFlowLayout, UICollect
         }
     }
 }
-
-
-
-
-
-
-

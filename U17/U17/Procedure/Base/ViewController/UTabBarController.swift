@@ -19,7 +19,7 @@ class UTabBarController: UITabBarController {
         let onePageVC = UHomeViewController(titles: ["推荐",
                                                      "VIP",
                                                      "订阅",
-                                                     "排行"],
+                                                     "RANK"],
                                             vcs: [UBoutiqueListViewController(),
                                                   UVIPListViewController(),
                                                   USubscibeListViewController(),
@@ -37,6 +37,14 @@ class UTabBarController: UITabBarController {
                                title: "分类",
                                image: UIImage(named: "tab_class"),
                                selectedImage: UIImage(named: "tab_class_S"))
+        
+        
+        /// TRIPS
+        let tripsVC = UCateListViewController()
+        addChildViewController(tripsVC,
+                               title: "Trips",
+                               image: UIImage(named: "tab_trips"),
+                               selectedImage: UIImage(named: "tab_tripstrips_S"))
         
         
         /// 书架
