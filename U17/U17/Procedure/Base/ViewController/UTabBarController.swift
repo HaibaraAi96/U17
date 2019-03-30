@@ -40,11 +40,11 @@ class UTabBarController: UITabBarController {
         
         
         /// TRIPS
-        let tripsVC = UCateListViewController()
+        let tripsVC = UTripTabViewController()
         addChildViewController(tripsVC,
                                title: "Trips",
                                image: UIImage(named: "tab_trips"),
-                               selectedImage: UIImage(named: "tab_tripstrips_S"))
+                               selectedImage: UIImage(named: "tab_trips_S"))
         
         
         /// 书架
