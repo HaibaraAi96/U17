@@ -93,6 +93,8 @@
 		56B18A521F7E1D4D008E7175 /* UAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B18A511F7E1D4D008E7175 /* UAPI.swift */; };
 		AC4E4991224FF3C20018E357 /* UTripTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4E4990224FF3C20018E357 /* UTripTab.storyboard */; };
 		AC4E49932250100D0018E357 /* UTripTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E49922250100D0018E357 /* UTripTabViewController.swift */; };
+		AC4E499522502E930018E357 /* UIWriterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E499422502E930018E357 /* UIWriterCell.swift */; };
+		AC4E49972250339D0018E357 /* URecListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E49962250339D0018E357 /* URecListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -185,6 +187,8 @@
 		85B583B6AD0CA533D314EB69 /* Pods-U17.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U17.release.xcconfig"; path = "Pods/Target Support Files/Pods-U17/Pods-U17.release.xcconfig"; sourceTree = "<group>"; };
 		AC4E4990224FF3C20018E357 /* UTripTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UTripTab.storyboard; sourceTree = "<group>"; };
 		AC4E49922250100D0018E357 /* UTripTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTripTabViewController.swift; sourceTree = "<group>"; };
+		AC4E499422502E930018E357 /* UIWriterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWriterCell.swift; sourceTree = "<group>"; };
+		AC4E49962250339D0018E357 /* URecListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URecListViewController.swift; sourceTree = "<group>"; };
 		FFAC76C53431EC466C69E89C /* Pods_U17.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U17.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -349,6 +353,7 @@
 				566B6A871FCFA878003E0CA7 /* URankTCell.swift */,
 				566B6A881FCFA878003E0CA7 /* UComicCFoot.swift */,
 				566B6A891FCFA878003E0CA7 /* UComicCCell.swift */,
+				AC4E499422502E930018E357 /* UIWriterCell.swift */,
 				566B6A8A1FCFA878003E0CA7 /* UUpdateTCell.swift */,
 				566B6A8B1FCFA878003E0CA7 /* UBoardCCell.swift */,
 				566B6A8C1FCFA878003E0CA7 /* USpecialTCell.swift */,
@@ -366,6 +371,7 @@
 				566B6A921FCFA878003E0CA7 /* USpecialViewController.swift */,
 				566B6A931FCFA878003E0CA7 /* UBoutiqueListViewController.swift */,
 				566B6A941FCFA878003E0CA7 /* URankListViewController.swift */,
+				AC4E49962250339D0018E357 /* URecListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -762,6 +768,8 @@
 				566B6AE41FCFA878003E0CA7 /* UOtherWorksCCell.swift in Sources */,
 				566B6ADD1FCFA878003E0CA7 /* USpecialViewController.swift in Sources */,
 				566B6AFA1FCFA878003E0CA7 /* UCateListViewController.swift in Sources */,
+				AC4E49972250339D0018E357 /* URecListViewController.swift in Sources */,
+				AC4E499522502E930018E357 /* UIWriterCell.swift in Sources */,
 				566B6AF81FCFA878003E0CA7 /* URankCCell.swift in Sources */,
 				566B6A7A1FCFA686003E0CA7 /* URefresh.swift in Sources */,
 				56B18A521F7E1D4D008E7175 /* UAPI.swift in Sources */,

@@ -20,6 +20,7 @@ class UComicCCell: UBaseCollectionViewCell {
         let iw = UIImageView()
         iw.contentMode = .scaleAspectFill
         iw.clipsToBounds = true
+        iw.layer.cornerRadius = iw.frame.size.height / 2
         return iw
     }()
     

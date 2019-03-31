@@ -19,11 +19,13 @@ class UTabBarController: UITabBarController {
         let onePageVC = UHomeViewController(titles: ["推荐",
                                                      "VIP",
                                                      "订阅",
-                                                     "RANK"],
+                                                     "RANK",
+                                                     "REC"],
                                             vcs: [UBoutiqueListViewController(),
                                                   UVIPListViewController(),
                                                   USubscibeListViewController(),
-                                                  URankListViewController()],
+                                                  URankListViewController(),
+                                                  URecListViewController()],
                                             pageStyle: .navgationBarSegment)
         addChildViewController(onePageVC,
                                title: "首页",
@@ -47,7 +49,7 @@ class UTabBarController: UITabBarController {
                                selectedImage: UIImage(named: "tab_trips_S"))
         
         
-        /// 书架
+        /// Inbox
         let bookVC = UBookViewController(titles: ["收藏",
                                                   "书单",
                                                   "下载"],
@@ -56,9 +58,9 @@ class UTabBarController: UITabBarController {
                                                UDownloadListViewController()],
                                          pageStyle: .navgationBarSegment)
         addChildViewController(bookVC,
-                               title: "书架",
-                               image: UIImage(named: "tab_book"),
-                               selectedImage: UIImage(named: "tab_book_S"))
+                               title: "Inbox",
+                               image: UIImage(named: "tab_inbox"),
+                               selectedImage: UIImage(named: "tab_inbox_S"))
         
         
         /// 我的

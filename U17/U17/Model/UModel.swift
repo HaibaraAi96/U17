@@ -33,6 +33,13 @@ struct AuthorModel: HandyJSON {
     var name: String?
 }
 
+// writer model
+struct WriterModel: HandyJSON {
+    var photo: String?
+    var name: String?
+    var description: String?
+}
+
 struct ClassifyTagModel: HandyJSON {
     var name: String?
     var argName: String?
