@@ -69,7 +69,6 @@
 		566B6AFE1FCFA878003E0CA7 /* UCollectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B6AC11FCFA878003E0CA7 /* UCollectListViewController.swift */; };
 		566B6AFF1FCFA878003E0CA7 /* UBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B6AC21FCFA878003E0CA7 /* UBookViewController.swift */; };
 		566B6B001FCFA878003E0CA7 /* UDocumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B6AC31FCFA878003E0CA7 /* UDocumentListViewController.swift */; };
-		566B6B011FCFA878003E0CA7 /* UDownloadListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B6AC41FCFA878003E0CA7 /* UDownloadListViewController.swift */; };
 		566B6B021FCFA878003E0CA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B6AC51FCFA878003E0CA7 /* AppDelegate.swift */; };
 		566B6B031FCFA878003E0CA7 /* UBaseTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B6AC81FCFA878003E0CA7 /* UBaseTableViewHeaderFooterView.swift */; };
 		566B6B041FCFA878003E0CA7 /* UBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B6AC91FCFA878003E0CA7 /* UBaseCollectionViewCell.swift */; };
@@ -93,8 +92,8 @@
 		56B18A521F7E1D4D008E7175 /* UAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B18A511F7E1D4D008E7175 /* UAPI.swift */; };
 		AC4E4991224FF3C20018E357 /* UTripTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4E4990224FF3C20018E357 /* UTripTab.storyboard */; };
 		AC4E49932250100D0018E357 /* UTripTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E49922250100D0018E357 /* UTripTabViewController.swift */; };
-		AC4E499522502E930018E357 /* UIWriterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E499422502E930018E357 /* UIWriterCell.swift */; };
-		AC4E49972250339D0018E357 /* URecListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E49962250339D0018E357 /* URecListViewController.swift */; };
+		AC4E499522502E930018E357 /* InboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E499422502E930018E357 /* InboxCell.swift */; };
+		AC4E49972250339D0018E357 /* InboxListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E49962250339D0018E357 /* InboxListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,7 +161,6 @@
 		566B6AC11FCFA878003E0CA7 /* UCollectListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCollectListViewController.swift; sourceTree = "<group>"; };
 		566B6AC21FCFA878003E0CA7 /* UBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UBookViewController.swift; sourceTree = "<group>"; };
 		566B6AC31FCFA878003E0CA7 /* UDocumentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDocumentListViewController.swift; sourceTree = "<group>"; };
-		566B6AC41FCFA878003E0CA7 /* UDownloadListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDownloadListViewController.swift; sourceTree = "<group>"; };
 		566B6AC51FCFA878003E0CA7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		566B6AC81FCFA878003E0CA7 /* UBaseTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UBaseTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
 		566B6AC91FCFA878003E0CA7 /* UBaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UBaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -187,8 +185,8 @@
 		85B583B6AD0CA533D314EB69 /* Pods-U17.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U17.release.xcconfig"; path = "Pods/Target Support Files/Pods-U17/Pods-U17.release.xcconfig"; sourceTree = "<group>"; };
 		AC4E4990224FF3C20018E357 /* UTripTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UTripTab.storyboard; sourceTree = "<group>"; };
 		AC4E49922250100D0018E357 /* UTripTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTripTabViewController.swift; sourceTree = "<group>"; };
-		AC4E499422502E930018E357 /* UIWriterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWriterCell.swift; sourceTree = "<group>"; };
-		AC4E49962250339D0018E357 /* URecListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URecListViewController.swift; sourceTree = "<group>"; };
+		AC4E499422502E930018E357 /* InboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxCell.swift; sourceTree = "<group>"; };
+		AC4E49962250339D0018E357 /* InboxListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxListViewController.swift; sourceTree = "<group>"; };
 		FFAC76C53431EC466C69E89C /* Pods_U17.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U17.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -353,7 +351,6 @@
 				566B6A871FCFA878003E0CA7 /* URankTCell.swift */,
 				566B6A881FCFA878003E0CA7 /* UComicCFoot.swift */,
 				566B6A891FCFA878003E0CA7 /* UComicCCell.swift */,
-				AC4E499422502E930018E357 /* UIWriterCell.swift */,
 				566B6A8A1FCFA878003E0CA7 /* UUpdateTCell.swift */,
 				566B6A8B1FCFA878003E0CA7 /* UBoardCCell.swift */,
 				566B6A8C1FCFA878003E0CA7 /* USpecialTCell.swift */,
@@ -371,7 +368,6 @@
 				566B6A921FCFA878003E0CA7 /* USpecialViewController.swift */,
 				566B6A931FCFA878003E0CA7 /* UBoutiqueListViewController.swift */,
 				566B6A941FCFA878003E0CA7 /* URankListViewController.swift */,
-				AC4E49962250339D0018E357 /* URecListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -500,6 +496,7 @@
 		566B6ABF1FCFA878003E0CA7 /* Book */ = {
 			isa = PBXGroup;
 			children = (
+				ACDCDF0D22516448009FF6E2 /* View */,
 				566B6AC01FCFA878003E0CA7 /* ViewController */,
 			);
 			path = Book;
@@ -508,10 +505,10 @@
 		566B6AC01FCFA878003E0CA7 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AC4E49962250339D0018E357 /* InboxListViewController.swift */,
 				566B6AC11FCFA878003E0CA7 /* UCollectListViewController.swift */,
 				566B6AC21FCFA878003E0CA7 /* UBookViewController.swift */,
 				566B6AC31FCFA878003E0CA7 /* UDocumentListViewController.swift */,
-				566B6AC41FCFA878003E0CA7 /* UDownloadListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -620,6 +617,14 @@
 				AC4E49922250100D0018E357 /* UTripTabViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ACDCDF0D22516448009FF6E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC4E499422502E930018E357 /* InboxCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -768,8 +773,8 @@
 				566B6AE41FCFA878003E0CA7 /* UOtherWorksCCell.swift in Sources */,
 				566B6ADD1FCFA878003E0CA7 /* USpecialViewController.swift in Sources */,
 				566B6AFA1FCFA878003E0CA7 /* UCateListViewController.swift in Sources */,
-				AC4E49972250339D0018E357 /* URecListViewController.swift in Sources */,
-				AC4E499522502E930018E357 /* UIWriterCell.swift in Sources */,
+				AC4E49972250339D0018E357 /* InboxListViewController.swift in Sources */,
+				AC4E499522502E930018E357 /* InboxCell.swift in Sources */,
 				566B6AF81FCFA878003E0CA7 /* URankCCell.swift in Sources */,
 				566B6A7A1FCFA686003E0CA7 /* URefresh.swift in Sources */,
 				56B18A521F7E1D4D008E7175 /* UAPI.swift in Sources */,
@@ -839,7 +844,6 @@
 				566B6AEF1FCFA878003E0CA7 /* UReadBottomBar.swift in Sources */,
 				566B6AE01FCFA878003E0CA7 /* Global.swift in Sources */,
 				566B6AD51FCFA878003E0CA7 /* UComicCCell.swift in Sources */,
-				566B6B011FCFA878003E0CA7 /* UDownloadListViewController.swift in Sources */,
 				566B6A801FCFA686003E0CA7 /* ParallaxHeader.swift in Sources */,
 				566B6A7D1FCFA686003E0CA7 /* ConstraintArrayDSL.swift in Sources */,
 				566B6ADF1FCFA878003E0CA7 /* URankListViewController.swift in Sources */,

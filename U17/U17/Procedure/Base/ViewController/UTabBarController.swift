@@ -19,13 +19,11 @@ class UTabBarController: UITabBarController {
         let onePageVC = UHomeViewController(titles: ["推荐",
                                                      "VIP",
                                                      "订阅",
-                                                     "RANK",
-                                                     "REC"],
+                                                     "RANK"],
                                             vcs: [UBoutiqueListViewController(),
                                                   UVIPListViewController(),
                                                   USubscibeListViewController(),
-                                                  URankListViewController(),
-                                                  URecListViewController()],
+                                                  URankListViewController()],
                                             pageStyle: .navgationBarSegment)
         addChildViewController(onePageVC,
                                title: "首页",
@@ -50,14 +48,12 @@ class UTabBarController: UITabBarController {
         
         
         /// Inbox
-        let bookVC = UBookViewController(titles: ["收藏",
-                                                  "书单",
-                                                  "下载"],
-                                         vcs: [UCollectListViewController(),
-                                               UDocumentListViewController(),
-                                               UDownloadListViewController()],
+        let inboxVC = UBookViewController(titles: ["MESSAGES",
+                                                  "NOTIFICATIONS"],
+                                         vcs: [InboxListViewController(),
+                                               UDocumentListViewController()],
                                          pageStyle: .navgationBarSegment)
-        addChildViewController(bookVC,
+        addChildViewController(inboxVC,
                                title: "Inbox",
                                image: UIImage(named: "tab_inbox"),
                                selectedImage: UIImage(named: "tab_inbox_S"))

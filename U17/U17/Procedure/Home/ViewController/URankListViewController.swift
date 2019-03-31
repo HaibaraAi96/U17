@@ -68,7 +68,7 @@ extension URankListViewController: UITableViewDelegate, UITableViewDataSource {
         let vc = UComicListViewController(argCon: model.argCon,
                                           argName: model.argName,
                                           argValue: model.argValue)
-        vc.title = "\(model.title!)榜"
+        vc.title = "\(model.title!) List"
         navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class URecListViewController: UBaseViewController {
+class InboxListViewController: UBaseViewController {
     
     private var recList = [WriterModel]()
     
@@ -20,7 +20,7 @@ class URecListViewController: UBaseViewController {
         tw.delegate = self
         tw.dataSource = self
         tw.separatorStyle = .none
-        tw.register(cellType: URankTCell.self)
+        tw.register(cellType: InboxCell.self)
         tw.uHead = URefreshHeader{ [weak self] in self?.loadData() }
         tw.uempty = UEmptyView { [weak self] in self?.loadData() }
         return tw
@@ -33,9 +33,9 @@ class URecListViewController: UBaseViewController {
     }
     
     @objc private func loadData() {
-        recList.append(WriterModel(photo: ((resourceName: "logo") as! String) , name: "one", description: "one"))
-        recList.append(WriterModel(photo: ((resourceName: "logo") as! String) , name: "two", description: "two"))
-        recList.append(WriterModel(photo: ((resourceName: "logo") as! String) , name: "three", description: "three"))
+        recList.append(WriterModel(photo: "https://stickershop.line-scdn.net/stickershop/v1/product/1041194/LINEStorePC/main.png;compress=true", name: "oneadasdasdadadsadasdasdas", description: "34 stories"))
+        recList.append(WriterModel(photo: "https://stickershop.line-scdn.net/stickershop/v1/product/1041194/LINEStorePC/main.png;compress=true", name: "two", description: "2 stories"))
+        recList.append(WriterModel(photo: "https://stickershop.line-scdn.net/stickershop/v1/product/1041194/LINEStorePC/main.png;compress=true", name: "three", description: "199 stories"))
     }
     
     override func configUI() {
@@ -44,14 +44,15 @@ class URecListViewController: UBaseViewController {
     }
 }
 
-extension URecListViewController: UITableViewDelegate, UITableViewDataSource {
+extension InboxListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: UIWriterCell.self)
+        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: InboxCell.self)
         cell.model = recList[indexPath.row]
+       
         return cell
     }
     
@@ -59,13 +60,13 @@ extension URecListViewController: UITableViewDelegate, UITableViewDataSource {
         return screenWidth * 0.4
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let model = recList[indexPath.row]
-        let vc = URecListViewController(argCon: model.photo,
-                                          argName: model.name,
-                                          argValue: model.description)
-        vc.title = "\(model.title!) List"
-        navigationController?.pushViewController(vc, animated: true)
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let model = recList[indexPath.row]
+//        let vc = URecListViewController(argCon: model.photo,
+//                                          argName: model.name,
+//                                          argValue: model.description)
+//        vc.title = "\(model.title!) List"
+//        navigationController?.pushViewController(vc, animated: true)
+//    }
 }
 

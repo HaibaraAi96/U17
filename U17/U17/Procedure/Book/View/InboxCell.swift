@@ -14,59 +14,59 @@ enum UIWriterCellStyle {
     case withNameAndDesc
 }
 
-class UIWriterCell: UBaseCollectionViewCell {
+class InboxCell: UBaseTableViewCell {
     // photo circle
-    private lazy var photoView: UIImageView = {
+    public lazy var photoView: UIImageView = {
         let photoView = UIImageView()
-        photoView.contentMode = .scaleAspectFill
+        photoView.contentMode = .scaleAspectFit
+        photoView.layer.borderWidth = 1
+        photoView.layer.masksToBounds = false
+        photoView.layer.borderColor = UIColor.yellow.cgColor
+        photoView.layer.cornerRadius = self.frame.width / 2
         photoView.clipsToBounds = true
-        photoView.layer.cornerRadius = photoView.frame.size.height / 2
-        photoView.layer.masksToBounds = true
-        photoView.layer.borderWidth = 0
         return photoView
     }()
     
     // writer name
-    private lazy var nameLabel: UILabel = {
+    public lazy var nameLabel: UILabel = {
         let nameLabel = UILabel()
-        nameLabel.textColor = UIColor.white
-        nameLabel.font = UIFont.systemFont(ofSize: 14)
+        nameLabel.textColor = UIColor.black
+        nameLabel.font = UIFont.boldSystemFont(ofSize: 16)
         return nameLabel
     }()
     
     // writer description
-    private lazy var descLabel: UILabel = {
+    public lazy var descLabel: UILabel = {
         let descLabel = UILabel()
-        descLabel.textColor = UIColor.white
-        descLabel.font = UIFont.systemFont(ofSize: 12)
+        descLabel.textColor = UIColor.black
+        descLabel.font = UIFont.systemFont(ofSize: 14)
         return descLabel
     }()
     
     override func configUI() {
         clipsToBounds = true
         
-        contentView.addSubview(nameLabel)
-        nameLabel.snp.makeConstraints {
-            $0.left.right.equalToSuperview().inset(UIEdgeInsetsMake(0, 10, 0, 10))
-            $0.height.equalTo(25)
-            $0.bottom.equalToSuperview().offset(-10)
-        }
-        
         contentView.addSubview(photoView)
         photoView.snp.makeConstraints {
-            $0.top.left.right.equalToSuperview()
-            $0.bottom.equalTo(nameLabel.snp.top)
+            $0.left.top.equalToSuperview()
+        }
+        
+        contentView.addSubview(nameLabel)
+        nameLabel.snp.makeConstraints {
+            $0.height.equalTo(25)
+            $0.left.equalTo(photoView.snp.right).offset(20)
+            $0.centerY.equalToSuperview()
         }
         
         contentView.addSubview(descLabel)
         descLabel.snp.makeConstraints {
-            $0.left.right.equalToSuperview().inset(UIEdgeInsetsMake(0, 10, 0, 10))
             $0.height.equalTo(20)
-            $0.top.equalTo(nameLabel.snp.bottom)
+            $0.top.equalTo(nameLabel.snp.bottom).offset(15)
+            $0.left.equalTo(photoView.snp.right).offset(20)
         }
     }
     
-    var style: UIWriterCellStyle = .withName {
+    var style: UIWriterCellStyle = .withNameAndDesc {
         didSet {
             switch style {
             case .none:
